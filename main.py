@@ -30,3 +30,16 @@ def test_division():
 }
 assert response.json() == data1
 
+def test_division():
+    urls = f"{Base_url}/divisiones"
+    params = {"dividendo": "10", "divisor": "0"}
+    response = requests.get(urls, params=params)
+    assert response.status_code == 400
+    data2={
+        "dividendo":10,
+        "divisor":0,
+        "division": "Error: No se puede dividir por cero"
+    }
+assert response.json() == data2
+
+
