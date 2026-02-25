@@ -13,3 +13,8 @@ data 1 ={
     "divisor":2,
     "division": 5
 }
+
+pasos para dseñar apis 
+1. Diseñar la Api(endpoints)
+2. Unit Test (pruebsas unitarias)
+3. Codificacion 
